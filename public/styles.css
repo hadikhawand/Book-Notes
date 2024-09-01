@@ -1,0 +1,88 @@
+/* Styling for the star rating */
+.star-rating {
+    font-size: 1.5rem; /* Adjust font size */
+    color: #ffc107; /* Gold color for stars */
+    display: inline-block;
+    margin-top: 10px; /* Space above the star rating */
+}
+
+.star-rating .star {
+    color: #e4e5e9; /* Light gray color for unfilled stars */
+    position: relative;
+    display: inline-block;
+}
+
+.star-rating .star.filled {
+    color: #ffc107; /* Gold color for filled stars */
+}
+
+/* Styling for the header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px; /* Padding around the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+header h1 {
+    font-size: 3rem; /* Large font size for the title */
+    color: #343a40; /* Dark color for text */
+    margin-bottom: 0; /* Remove margin below header */
+}
+
+/* Styling for book entries */
+.book {
+    border: 2px solid #007bff; /* Blue border for emphasis */
+    width: 50%;
+    margin: 20px auto; /* Center horizontally with margin */
+    padding: 20px; /* Padding inside the book entry */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #ffffff; /* White background for each book entry */
+}
+
+.book img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    border-radius: 4px; /* Rounded corners for the image */
+}
+
+.book h2 {
+    font-size: 2rem; /* Slightly smaller than header */
+    color: #343a40; /* Dark color for text */
+}
+
+.book p {
+    font-size: 1rem; /* Standard font size for description */
+    color: #495057; /* Slightly lighter color for text */
+}
+
+/* Styling for the sort by dropdown */
+#sortForm {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    margin: 20px 0; /* Add vertical margin for spacing */
+}
+
+#sortBooks {
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px; /* Add padding inside the dropdown */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    color: #495057; /* Dark text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for focus effect */
+}
+
+#sortBooks:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Blue shadow effect on focus */
+}
+
+#sortBooks option {
+    padding: 10px; /* Add padding inside options for better spacing */
+}
