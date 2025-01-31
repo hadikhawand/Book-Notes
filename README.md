@@ -24,7 +24,7 @@ Follow these steps to get the application up and running:
 
    
    ```bash
-   git clone https://github.com/your-username/Book-Notes.git
+   git clone https://github.com/hadikhawand/Book-Notes.git
    cd book-notes
    
 2. **Install Dependencies**
