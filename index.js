@@ -66,6 +66,6 @@ app.post("/add", async (req, res) => {
     }
 });
 
-app.listen(port, () =>{
+app.listen(process.env.PORT||port, () =>{
     console.log(`listening to port ${port}.`);
 })
