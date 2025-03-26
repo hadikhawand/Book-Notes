@@ -7,10 +7,10 @@ const app = express();
 const port = 3000;
 
 const db = new pg.Client({
-    user: "books_tfsu_user",
-    database: "books_tfsu",
-    host: "dpg-cvi72sdds78s73ejs810-a",
-    password: "4XQfBUEI4wUPoyUePiHJFmaTuHrJ1rI4",
+    user: "postgres",
+    database: "books",
+    host: "localhost",
+    password: "...",
     port: 5432
 });
 db.connect();
@@ -66,6 +66,6 @@ app.post("/add", async (req, res) => {
     }
 });
 
-app.listen(process.env.PORT||port, () =>{
+app.listen(port, () =>{
     console.log(`listening to port ${port}.`);
 })
